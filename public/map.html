@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://map.nga.mil/api/mow.js"></script>
+    <title>Map of World</title>
+
+    <script>
+        map = null;
+        MoW.ready(function() {
+            map = new MoW.Map({target: 'map'});
+            console.log('map -> ', map);
+        });
+    </script>
+  </head>
+  <body>
+    <div id="map" style="height: 500px; border: 1px solid black;"></div>
+  </body>
+</html>
