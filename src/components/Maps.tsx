@@ -9,14 +9,14 @@ const Maps = () => {
                 <div id="viewDiv" style={{ height: '100vh', width: '100vw' }}>
                     <Route path='/:id' children={<BaseCoreMap/>} />
                     <Route exact path='/'>
-                        <h1>To test ArcGIS Maps using the following Portals</h1>
+                        <h1>The page is to test ArcGIS Maps using the following Portals</h1>
                         <h3>(All Links will open a new tab)</h3>
-                        <ul>No Credentials Needed
+                        <ul>No Credentials Needed<br/>(Both Work)
                             <li><Link to="/jsapi.maps.arcgis.com" target="_blank">jsapi.maps.arcgis.com</Link></li>
                             <li><Link to="/nga.maps.arcgis.com" target="_blank">nga.maps.arcgis.com</Link></li>
                         </ul>
-                        <ul>Credentials Needed
-                            <li><Link to="/map.html" target="_blank">Map of the World (Works!!!)</Link></li>
+                        <ul>Credentials Needed<br/>(Only First Works)
+                            <li><Link to="/map.html" target="_blank">Map of the World</Link></li>
                             <li><Link to="/portal.geo.nga.mil" target="_blank">portal.geo.nga.mil</Link></li>
                             <li><Link to="/portal.geo.nga.mil/portal/home" target="_blank">portal.geo.nga.mil/portal/home</Link></li>
                             <li><Link to="/maps.gvs.nga.mil" target="_blank">maps.gvs.nga.mil</Link></li>
