@@ -9,12 +9,17 @@ import esriConfig from "@arcgis/core/config";
 import Portal from "@arcgis/core/portal/Portal";
 
 const BaseCoreMap = (props: any) => {
+    
     useEffect(() => {
-        console.log('props -> ' , props);
+        const pathName = window.location.pathname;
+        const portalUrl = `http:/${pathName}`;
+        console.log('portalUrl -> ', portalUrl);
+        
+        esriConfig.portalUrl = portalUrl;
 
         /************************** Works ***********************************/
-        esriConfig.portalUrl = "https://jsapi.maps.arcgis.com";
-        // esriConfig.portalUrl = 'https://nga.maps.arcgis.com/';
+        // esriConfig.portalUrl = "https://jsapi.maps.arcgis.com";
+        // esriConfig.portalUrl = 'https://nga.maps.arcgis.com';
         // esriConfig.portalUrl = '';
         
         /************ Doesn't Work ************/
