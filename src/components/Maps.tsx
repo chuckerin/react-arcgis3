@@ -17,6 +17,7 @@ const Maps = () => {
                         </ul>
                         <ul>Credentials Needed<br/>(Only First Works)
                             <li><Link to="/map.html" target="_blank">Map of the World</Link></li>
+                            <li><Link to="/portal.geo.nga.mil/portal" target="_blank">portal.geo.nga.mil/portal</Link></li>
                             <li><Link to="/portal.geo.nga.mil" target="_blank">portal.geo.nga.mil</Link></li>
                             <li><Link to="/portal.geo.nga.mil/portal/home" target="_blank">portal.geo.nga.mil/portal/home</Link></li>
                             <li><Link to="/maps.gvs.nga.mil" target="_blank">maps.gvs.nga.mil</Link></li>
@@ -33,7 +34,9 @@ const Maps = () => {
 
 export default Maps;
 
+
 // esriConfig.portalUrl = "https://portal.geo.nga.mil/"
+// esriConfig.portalUrl = "https://portal.geo.nga.mil/portal"
 // esriConfig.portalUrl = "https://portal.geo.nga.mil/portal/home/";
 // esriConfig.portalUrl = 'https://portal.geo.nga.mil/portal/home/index.html';
 // esriConfig.portalUrl = "https://portal.geo.nga.mil/portal/apps/Minimalist/index.html?webmap=5fc50384a3b842ecb5b8275ca36c867c";
