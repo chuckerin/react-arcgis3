@@ -24,16 +24,17 @@ const BaseCoreMap = (props: any) => {
         portal
             .load()
             .then(() => {
+                const basemap = portal.useVectorBasemaps
+                    ? portal.defaultVectorBasemap
+                    : portal.defaultBasemap;
 
-                const map = new Map({
-                    basemap: "topo"
-                });
+                const map = new Map({ basemap });
 
                 const view = new MapView({
                     container: "viewDiv",
                     map,
                     center: [-89.924450, 38.578690],
-                    zoom: 3
+                    scale: 10000
                 });
 
                 // The BasemapGallery will use the basemaps
