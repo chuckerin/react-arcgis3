@@ -25,8 +25,8 @@ const BaseCoreMap = (props: any) => {
             .load()
             .then(() => {
                 const basemap = portal.useVectorBasemaps
-                    ? portal.defaultVectorBasemap
-                    : portal.defaultBasemap;
+                    ? portal.defaultVectorBasemap   // Topo
+                    : portal.defaultBasemap;        // World Street View
 
                 const map = new Map({ basemap });
 
