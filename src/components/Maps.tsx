@@ -15,9 +15,11 @@ const Maps = () => {
                             <li><Link to="/jsapi.maps.arcgis.com" target="_blank">jsapi.maps.arcgis.com</Link></li>
                             <li><Link to="/nga.maps.arcgis.com" target="_blank">nga.maps.arcgis.com</Link></li>
                         </ul>
-                        <ul>Credentials Needed<br/>(Only First Works)
+                        <ul>Credentials Needed<br/>(Both Work)
                             <li><Link to="/map.html" target="_blank">Map of the World</Link></li>
                             <li><Link to="/portal.geo.nga.mil/portal" target="_blank">portal.geo.nga.mil/portal</Link></li>
+                        </ul>
+                        <ul>Credentials Needed<br/>(None of these Work)
                             <li><Link to="/portal.geo.nga.mil" target="_blank">portal.geo.nga.mil</Link></li>
                             <li><Link to="/portal.geo.nga.mil/portal/home" target="_blank">portal.geo.nga.mil/portal/home</Link></li>
                             <li><Link to="/maps.gvs.nga.mil" target="_blank">maps.gvs.nga.mil</Link></li>
